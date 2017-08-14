@@ -340,6 +340,26 @@ if (!function_exists('array_pluck')) {
     }
 }
 
+if (!function_exists('array_prepend')) {
+    /**
+     * Push an item onto the beginning of an array.
+     *
+     * @param  array  $array
+     * @param  mixed  $value
+     * @param  mixed  $key
+     * @return array
+     */
+    function prepend($array, $value, $key = null)
+    {
+        if (is_null($key)) {
+            array_unshift($array, $value);
+        } else {
+            $array = [$key => $value] + $array;
+        }
+        return $array;
+    }
+}
+
 if (!function_exists('array_pull')) {
     /**
      * Get a value from the array, and remove it.
@@ -416,6 +436,19 @@ if (!function_exists('array_where')) {
         }
 
         return $filtered;
+    }
+}
+
+if (!function_exists('array_wrap')) {
+    /**
+     * If the given value is not an array, wrap it in one.
+     *
+     * @param  mixed  $value
+     * @return array
+     */
+    function wrap($value)
+    {
+        return ! is_array($value) ? [$value] : $value;
     }
 }
 

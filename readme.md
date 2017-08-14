@@ -38,9 +38,11 @@ In your `composer.json`:
     * [array_has](#array_has)
     * [array_only](#array_only)
     * [array_pluck](#array_pluck)
+    * [array_prepend](#array_prepend)
     * [array_pull](#array_pull)
     * [array_set](#array_set)
     * [array_where](#array_where)
+    * [array_wrap](#array_wrap)
     * [head](#head)
     * [last](#last)
 * [Strings](#strings)
@@ -269,6 +271,20 @@ function array_only($array, $keys)
 function array_pluck($array, $value, $key = null)
 ```
 
+### array_pluck
+
+```php
+/**
+ * Push an item onto the beginning of an array.
+ *
+ * @param  array  $array
+ * @param  mixed  $value
+ * @param  mixed  $key
+ * @return array
+ */
+function prepend($array, $value, $key = null)
+```
+
 ### array_pull
 
 ```php
@@ -310,6 +326,18 @@ function array_set(&$array, $key, $value)
 	 * @return array
 */
 function array_where($array, Closure $callback)
+```
+
+### array_wrap
+
+```php
+/**
+ * If the given value is not an array, wrap it in one.
+ *
+ * @param  mixed  $value
+ * @return array
+ */
+function wrap($value)
 ```
 
 ### head
