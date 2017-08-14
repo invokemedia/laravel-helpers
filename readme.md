@@ -59,11 +59,9 @@ In the `require` key of `composer.json` file add the following
     * [object_get](#object_get)
     * [value](#value)
     * [with](#with)
-    
-<a name="arrays"/>
+
 ## Arrays
 
-<a name="append_config"/>
 ### append_config
 
 ```php
@@ -76,7 +74,6 @@ In the `require` key of `composer.json` file add the following
 function append_config(array $array)
 ```
 
-<a name="array_add"/>
 ### array_add
 
 ```php
@@ -91,7 +88,6 @@ function append_config(array $array)
 function array_add($array, $key, $value)
 ```
 
-<a name="array_build"/>
 ### array_build
 
 ```php
@@ -105,7 +101,6 @@ function array_add($array, $key, $value)
 function array_build($array, Closure $callback)
 ```
 
-<a name="array_divide"/>
 ### array_divide
 
 ```php
@@ -118,7 +113,6 @@ function array_build($array, Closure $callback)
 function array_divide($array)
 ```
 
-<a name="array_dot"/>
 ### array_dot
 
 ```php
@@ -132,7 +126,6 @@ function array_divide($array)
 function array_dot($array, $prepend = '')
 ```
 
-<a name="array_except"/>
 ### array_except
 
 ```php
@@ -146,7 +139,6 @@ function array_dot($array, $prepend = '')
 function array_except($array, $keys)
 ```
 
-<a name="array_fetch"/>
 ### array_fetch
 
 ```php
@@ -160,7 +152,6 @@ function array_except($array, $keys)
 function array_fetch($array, $key)
 ```
 
-<a name="array_first"/>
 ### array_first
 
 ```php
@@ -175,7 +166,6 @@ function array_fetch($array, $key)
 function array_first($array, $callback, $default = null)
 ```
 
-<a name="array_last"/>
 ### array_last
 
 ```php
@@ -190,7 +180,6 @@ function array_first($array, $callback, $default = null)
 function array_last($array, $callback, $default = null)
 ```
 
-<a name="array_flatten"/>
 ### array_flatten
 
 ```php
@@ -203,7 +192,6 @@ function array_last($array, $callback, $default = null)
 function array_flatten($array)
 ```
 
-<a name="array_forgot"/>
 ### array_forgot
 
 ```php
@@ -217,7 +205,6 @@ function array_flatten($array)
 function array_forget(&$array, $keys)
 ```
 
-<a name="array_get"/>
 ### array_get
 
 ```php
@@ -232,7 +219,6 @@ function array_forget(&$array, $keys)
 function array_get($array, $key, $default = null)
 ```
 
-<a name="array_has"/>
 ### array_has
 
 ```php
@@ -246,7 +232,6 @@ function array_get($array, $key, $default = null)
 function array_has($array, $key)
 ```
 
-<a name="array_only"/>
 ### array_only
 
 ```php
@@ -260,7 +245,6 @@ function array_has($array, $key)
 function array_only($array, $keys)
 ```
 
-<a name="array_pluck"/>
 ### array_pluck
 
 ```php
@@ -275,7 +259,6 @@ function array_only($array, $keys)
 function array_pluck($array, $value, $key = null)
 ```
 
-<a name="array_pull"/>
 ### array_pull
 
 ```php
@@ -290,7 +273,6 @@ function array_pluck($array, $value, $key = null)
 function array_pull(&$array, $key, $default = null)
 ```
 
-<a name="array_set"/>
 ### array_set
 
 ```php
@@ -307,7 +289,6 @@ function array_pull(&$array, $key, $default = null)
 function array_set(&$array, $key, $value)
 ```
 
-<a name="array_where"/>
 ### array_where
 
 ```php
@@ -321,7 +302,6 @@ function array_set(&$array, $key, $value)
 function array_where($array, Closure $callback)
 ```
 
-<a name="head"/>
 ### head
 
 ```php
@@ -334,7 +314,6 @@ function array_where($array, Closure $callback)
 function head($array)
 ```
 
-<a name="last"/>
 ### last
 
 ```php
@@ -347,10 +326,8 @@ function head($array)
 function last($array)
 ```
 
-<a name="strings"/>
 ## Strings
 
-<a name="ascii"/>
 ### ascii
 
 ```php
@@ -363,7 +340,6 @@ function last($array)
 function ascii($value)
 ```
 
-<a name="camel_case"/>
 ### camel_case
 
 ```php
@@ -376,7 +352,6 @@ function ascii($value)
 function camel_case($value)
 ```
 
-<a name="charsArray"/>
 ### charsArray
 
 ```php
@@ -392,7 +367,6 @@ function camel_case($value)
 function charsArray()
 ```
 
-<a name="ends_with"/>
 ### ends_with
 
 ```php
@@ -406,7 +380,6 @@ function charsArray()
 function ends_with($haystack, $needles)
 ```
 
-<a name="preg_replace_sub"/>
 ### preg_replace_sub
 
 ```php
@@ -421,7 +394,6 @@ function ends_with($haystack, $needles)
 function preg_replace_sub($pattern, &$replacements, $subject)
 ```
 
-<a name="snake_case"/>
 ### snake_case
 
 ```php
@@ -435,7 +407,6 @@ function preg_replace_sub($pattern, &$replacements, $subject)
 function snake_case($value, $delimiter = '_')
 ```
 
-<a name="starts_with"/>
 ### starts_with
 
 ```php
@@ -449,7 +420,6 @@ function snake_case($value, $delimiter = '_')
 function starts_with($haystack, $needles)
 ```
 
-<a name="str_contains"/>
 ### str_contains
 
 ```php
@@ -463,7 +433,6 @@ function starts_with($haystack, $needles)
 function str_contains($haystack, $needles)
 ```
 
-<a name="str_finish"/>
 ### str_finish
 
 ```php
@@ -477,7 +446,6 @@ function str_contains($haystack, $needles)
 function str_finish($value, $cap)
 ```
 
-<a name="str_is"/>
 ### str_is
 
 ```php
@@ -491,7 +459,6 @@ function str_finish($value, $cap)
 function str_is($pattern, $value)
 ```
 
-<a name="str_limit"/>
 ### str_limit
 
 ```php
@@ -506,7 +473,6 @@ function str_is($pattern, $value)
 function str_limit($value, $limit = 100, $end = '...')
 ```
 
-<a name="str_random"/>
 ### str_random
 
 ```php
@@ -521,7 +487,6 @@ function str_limit($value, $limit = 100, $end = '...')
 function str_random($length = 16)
 ```
 
-<a name="str_replace_array"/>
 ### str_replace_array
 
 ```php
@@ -536,7 +501,6 @@ function str_random($length = 16)
 function str_replace_array($search, array $replace, $subject)
 ```
 
-<a name="str_slug"/>
 ### str_slug
 
 ```php
@@ -550,7 +514,6 @@ function str_replace_array($search, array $replace, $subject)
 function str_slug(string $title, string $separator = '-')
 ```
 
-<a name="studly_case"/>
 ### studly_case
 
 ```php
@@ -563,10 +526,8 @@ function str_slug(string $title, string $separator = '-')
 function studly_case($value)
 ```
 
-<a name="classes"/>
 ## Classes
 
-<a name="class_basename"/>
 ### class_basename
 
 ```php
@@ -579,7 +540,6 @@ function studly_case($value)
 function class_basename($class)
 ```
 
-<a name="class_uses_recursive"/>
 ### class_uses_recursive
 
 ```php
@@ -592,7 +552,6 @@ function class_basename($class)
 function class_uses_recursive($class)
 ```
 
-<a name="trait_uses_recursive"/>
 ### trait_uses_recursive
 
 ```php
@@ -605,10 +564,8 @@ function class_uses_recursive($class)
 function trait_uses_recursive($trait)
 ```
 
-<a name="misc"/>
 ## Misc.
 
-<a name="data_get"/>
 ### data_get
 
 ```php
@@ -623,7 +580,6 @@ function trait_uses_recursive($trait)
 function data_get($target, $key, $default = null)
 ```
 
-<a name="e"/>
 ### e
 
 ```php
@@ -636,7 +592,6 @@ function data_get($target, $key, $default = null)
 function e($value)
 ```
 
-<a name="object_get"/>
 ### object_get
 
 ```php
@@ -651,7 +606,6 @@ function e($value)
 function object_get($object, $key, $default = null)
 ```
 
-<a name="value"/>
 ### value
 
 ```php
@@ -664,7 +618,6 @@ function object_get($object, $key, $default = null)
 function value($value)
 ```
 
-<a name="with"/>
 ### with
 
 ```php
