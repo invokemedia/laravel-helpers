@@ -1,14 +1,24 @@
 ## Laravel 5 Helpers for Non-Laravel Projects
 
-This project takes the useful [Laravel helper functions](http://laravel.com/docs/5.0/helpers) and allows you to use them in Non-Laravel projects.
+This project takes the useful [Laravel helper functions](http://laravel.com/docs/5.4/helpers) and allows you to use them in Non-Laravel projects.
 
 All dependencies have been extracted out to a single helpers file. No need to import half of Symphony and Laravel to make these work.
 
 ## Setup
 
-In the `require` key of `composer.json` file add the following
+In your `composer.json`:
 
-    "rappasoft/laravel-helpers": "dev-master"
+```json
+{
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/invokemedia/laravel-helpers"
+    }],
+    "require": {
+        "invokemedia/laravel-helpers": "master"
+    }
+}
+```
 
 ## Documentation
 
