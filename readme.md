@@ -61,6 +61,7 @@ In your `composer.json`:
     * [str_replace_array](#str_replace_array)
     * [str_slug](#str_slug)
     * [studly_case](#studly_case)
+    * [title_case](#title_case)
 * [Classes](#classes)
     * [class_basename](#class_basename)
     * [class_uses_recursive](#class_uses_recursive)
@@ -562,6 +563,18 @@ function str_slug(string $title, string $separator = '-')
 	 * @return string
 */
 function studly_case($value)
+```
+
+### title_case
+
+```php
+/**
+ * Convert the given string to title case.
+ *
+ * @param  string  $value
+ * @return string
+ */
+function title_case($value)
 ```
 
 ## Classes
