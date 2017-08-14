@@ -272,7 +272,7 @@ function array_only($array, $keys)
 function array_pluck($array, $value, $key = null)
 ```
 
-### array_pluck
+### array_prepend
 
 ```php
 /**
@@ -283,7 +283,7 @@ function array_pluck($array, $value, $key = null)
  * @param  mixed  $key
  * @return array
  */
-function prepend($array, $value, $key = null)
+function array_prepend($array, $value, $key = null)
 ```
 
 ### array_pull

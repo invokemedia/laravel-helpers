@@ -349,7 +349,7 @@ if (!function_exists('array_prepend')) {
      * @param  mixed  $key
      * @return array
      */
-    function prepend($array, $value, $key = null)
+    function array_prepend($array, $value, $key = null)
     {
         if (is_null($key)) {
             array_unshift($array, $value);
