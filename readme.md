@@ -15,7 +15,7 @@ In your `composer.json`:
         "url": "https://github.com/invokemedia/laravel-helpers"
     }],
     "require": {
-        "invokemedia/laravel-helpers": "master"
+        "invokemedia/laravel-helpers": ">1.0"
     }
 }
 ```
